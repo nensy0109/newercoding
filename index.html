@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Awesome Web Page Design - Easy Tutorials</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+<div id="hero">
+    <div class="navbar">
+         <img src="H:/logo.png.png" class="logo">
+         <div class="user">
+         <button type="button">Explore</button>
+         <img src="H:/user.png.jpg">
+         </div>
+    </div>
+    <div class="container">
+        <div class="info">
+            <h1>EXPLORER</h1>
+            <p>Hey there! My name is Nensy Kathiriya.<br>I visited some places.<br>I shared some photos of that place in this website.</p>
+            <Input type="text" placeholder="search">
+        </div>
+    </div>
+    <div class="slider">
+        <img src="h:/lefty.png" id="prev">
+        <div class="preview">
+           <img src="H:/p1.jpg" class="active thumbnail">
+           <img src="H:/p2.jpg" class="thumbnail">
+           <img src="H:/p3.jpg" class="thumbnail">
+           <img src="H:/p4.jpg" class="thumbnail">
+           <img src="H:/p5.jpg" class="thumbnail">
+           <img src="H:/p6.jpg" class="thumbnail">
+           <img src="H:/p7.jpg" class="thumbnail">
+           <img src="H:/p8.jpg" class="thumbnail">
+           <img src="H:/p9.jpg" class="thumbnail">
+           <img src="H:/p10.jpg" class="thumbnail">
+           <img src="H:/p11.jpg" class="thumbnail">
+           <img src="H:/p12.jpg" class="thumbnail">
+           <img src="H:/p13.jpg" class="thumbnail">
+           <img src="H:/p14.jpg" class="thumbnail">
+           <img src="H:/p15.jpg" class="thumbnail">
+           <img src="H:/p16.jpg" class="thumbnail">
+           <img src="H:/p17.jpg" class="thumbnail">
+           <img src="H:/p18.jpg" class="thumbnail">
+           <img src="H:/p19.jpg" class="thumbnail">
+           <img src="H:/p20.jpg" class="thumbnail">
+           <img src="H:/p21.jpg" class="thumbnail">
+           <img src="H:/p22.jpg" class="thumbnail">
+           <img src="H:/p23.jpg" class="thumbnail">
+           <img src="H:/p24.jpg" class="thumbnail">
+           <img src="H:/p25.jpg" class="thumbnail">
+           <img src="H:/p26.jpg" class="thumbnail">
+           <img src="H:/p27.jpg" class="thumbnail">
+           <img src="H:/p28.jpg" class="thumbnail">
+           <img src="H:/p29.jpg" class="thumbnail">
+
+
+        </div>
+        <img src="h:/righty.png" id="next">
+    </div>
+</div>
+<script>
+var prev = document.getElementById("prev");
+var next = document.getElementById("next");
+var thumbnail = document.getElementsByClassName("thumbnail");
+var hero = document.getElementById("hero");
+var backgroundImg = new Array(
+    "H:/g1.jpg",
+    "H:/g2.jpg",
+    "H:/g3.jpg",
+    "H:/g4.jpg",
+    "H:/g5.jpg",
+    "H:/g6.jpg",
+    "H:/g7.jpg",
+    "H:/g8.jpg",
+    "H:/g9.jpg",
+    "H:/g10.jpg",
+    "H:/g11.jpg",
+    "H:/g12.jpg",
+    "H:/g13.jpg",
+    "H:/g14.jpg",
+    "H:/g15.jpg",
+    "H:/g16.jpg",
+    "H:/g17.jpg",
+    "H:/g18.jpg",
+    "H:/g19.jpg",
+    "H:/g20.jpg",
+    "H:/g21.jpg",
+    "H:/g22.jpg",
+    "H:/g23.jpg",
+    "H:/g24.jpg",
+    "H:/g25.jpg",
+    "H:/g26.jpg",
+    "H:/g27.jpg",
+    "H:/g28.jpg",
+    "H:/g29.jpg",
+    
+);
+let i = 0;
+next.onclick = function(){
+
+    if(i<28){
+    hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+    thumbnail[i+1].classList.add("active");
+    thumbnail[i].classList.remove("active");
+    i++;}
+}
+prev.onclick = function(){
+
+if(i>0){
+hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+   thumbnail[i-1].classList.add("active");
+   thumbnail[i].classList.remove("active");
+   i--;}
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>
